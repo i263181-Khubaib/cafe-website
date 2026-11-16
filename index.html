@@ -1,46 +1,55 @@
-!DOCTYPE html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe &amp; Vanilla | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <header>
+    <nav>
+      <a href="index.html" class="brand">Vibe &amp; Vanilla</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<h1>Vibe & Vanilla</h1>
-<p>Freshly Brewed Coffee</p>
-<img src="images/images.jpg" alt="coffee">
-<table style="width: 50%">
-  <tr>
-    <th>Coffee Name</th>
-    <th>Price(Rs)</th>
-  </tr>
-  <tr>
-    <td>Moccona </td>
-    <td>3000</td>
-    
-  </tr>
-  <tr>
-    <td>llly</td>
-    <td>5000</td>
-   
-  </tr>
-  </tr>
-  <tr>
-    <td>Klassno</td>
-    <td>10,000</td>
-   
-  </tr>
+  <main class="container">
+    <section class="hero">
+      <h1>Vibe &amp; Vanilla</h1>
+      <p class="tagline">Freshly Brewed Coffee</p>
+      <img src="images/images.jpg" alt="Freshly brewed coffee cup" class="hero-img">
+      <p class="welcome-text">
+        Welcome to Vibe &amp; Vanilla, a calm corner crafted for slow mornings and rich, aromatic brews. Settle into our warm space and enjoy every sip made fresh to order.
+      </p>
+      <a href="menu.html" class="btn">View Menu</a>
+    </section>
 
-</table>
-<button onclick="myFunction()">order</button>
+    <section class="gallery-section">
+      <h2>Inside Our Café</h2>
+      <div class="image-grid">
+        <figure class="gallery-card">
+          <img src="images/cafe-corner.jpg" alt="Minimalist cozy café corner">
+          <figcaption>A quiet corner to unwind</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="images/caramel-latte.jpg" alt="Iced caramel vanilla latte and croissant">
+          <figcaption>Signature Caramel Vanilla Latte</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-<script>
-function myFunction() {
-  alert("your order has been confirmed!");
-}
-</script>
+  <footer>
+    <p>&copy; 2026 Vibe &amp; Vanilla. All rights reserved.</p>
+  </footer>
 
-
-
+  <script src="script.js"></script>
 </body>
 </html>

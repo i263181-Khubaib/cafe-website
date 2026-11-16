@@ -1,4 +1,245 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: brown;
+  background-color: #FAF5EE; /* Cream */
+  color: #3E2723;            /* Dark Brown */
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+header {
+  border-bottom: 1px solid #C68B59;
+  padding: 1.25rem 2rem;
+}
+
+nav {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3E2723;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3E2723;
+  font-weight: 500;
+  padding-bottom: 4px;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #C68B59;
+  border-bottom: 2px solid #C68B59;
+}
+
+/* Centered Container Layout */
+.container {
+  max-width: 850px;
+  width: 90%;
+  margin: 3.5rem auto;
+  flex: 1;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #C68B59;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #C68B59;
+  margin-bottom: 1.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-text {
+  max-width: 540px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Rounded Caramel Buttons */
+.btn,
+button {
+  background-color: #C68B59; /* Caramel */
+  color: #FAF5EE;            /* Cream */
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #3E2723; /* Dark Brown */
+  transform: translateY(-1px);
+}
+
+/* Minimalist Menu Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+th,
+td {
+  padding: 1rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #C68B59;
+}
+
+th {
+  font-weight: 600;
+  border-bottom: 2px solid #C68B59;
+}
+
+td:last-child,
+th:last-child {
+  text-align: right;
+}
+
+/* Contact Info & Minimal Form */
+.info-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #C68B59;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  max-width: 500px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1.5px solid #C68B59;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #3E2723;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3E2723;
+}
+
+/* Minimal Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #C68B59;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+/* Image Proportions & Home Gallery */
+.hero-img {
+  max-width: 480px;
+  max-height: 290px;
+  object-fit: cover;
+}
+
+.gallery-section {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #C68B59;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #C68B59;
+  display: block;
+}
+
+.gallery-card figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #3E2723;
+  font-weight: 500;
 }
